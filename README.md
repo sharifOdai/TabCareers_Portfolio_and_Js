@@ -6,5 +6,5 @@ Welcome to my personal portfolio website! This project showcases my skills and e
 
 -JS Assignment
 
-![porfolio](url)
+![porfolio]([url](https://raw.githubusercontent.com/sharifOdai/TabCareers_Portfolio_and_Js/main/portfolio.png)https://raw.githubusercontent.com/sharifOdai/TabCareers_Portfolio_and_Js/main/portfolio.png)
 
