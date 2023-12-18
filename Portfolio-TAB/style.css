@@ -1,0 +1,263 @@
+
+
+
+.main-container {
+    width: 85%;
+    height: 100%;
+    
+    margin-left: 13%;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid #3BBADB;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav-bar {
+    overflow: hidden;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    margin-right: 74px;
+}
+
+li {
+    display: inline-block; 
+    margin-left: 20px;
+}
+
+.nav-bar button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    outline: inherit;
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px;
+}
+
+.nav-bar button:hover {
+    background-color: rgb(236, 239, 241);
+}
+
+
+.home-btn {
+    color: #b4825d;
+}
+
+
+.material-symbols-outlined {
+
+
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    font-size: 24px;
+}
+
+.icon{
+    vertical-align: middle;
+    margin-bottom: 8px;
+    color: black;
+}
+
+
+.about-btn {
+    color: black;
+}
+
+.section {
+    
+    display: flex;
+    margin-top: 70px;
+    margin-right: 50px;
+    margin-left: 60px;
+}
+
+.article {
+    flex: 1;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+
+}
+
+.article-header{
+    color: #3BBADB;
+
+}
+
+.article-secondary-header{
+    color: #008AAA;
+}
+
+.article-secondary-header .highlighted-text {
+    margin-bottom: 20px;
+    color: #D1884F;
+}
+
+.article-paragraph {
+    margin: 0;
+    padding: 0;
+    width: 50%; 
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#read-more-checkbox {
+    display: none; 
+}
+
+#read-more-checkbox:not(:checked) ~ .see-more:after { 
+    color: blue; 
+}
+
+
+#read-more-checkbox:not(:checked) + .read-more-content {
+    display: none;
+}
+
+.see-more {
+    color: #3BBADB;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+}
+
+
+.img-container {
+    margin-left: 20px;
+    
+}
+
+.img {
+    margin-top: 30px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    width: 350px;
+    border-radius: 1dvb;
+}
+
+.article-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+}
+
+.btn-hire {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #008AAA;
+    box-shadow: 0 4px 8px rgba(143, 149, 200, 0.758);
+    
+    padding: 4.5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-hire-info {
+    display: none;
+    color: #006688;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #008AAA;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(143, 149, 200, 0.758);
+    margin-top: 10px;
+    width: 200px; 
+}
+
+.btn-hire:hover .btn-hire-info {
+    display: block;
+    background-color: #ffffff;
+}
+
+.btn-project {
+    position: relative;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #008AAA;
+    border: 1px solid #006688;
+    background-color: rgb(255, 255, 255);
+    
+    padding: 4.5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-project-info {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #008AAA;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(143, 149, 200, 0.758);
+    margin-top: 10px;
+    width: 160px; 
+}
+
+.btn-project:hover .btn-project-info {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        align-items: center;
+    }
+
+   
+
+    li {
+        display: inline-block; 
+        margin:  auto;
+    }
+
+    .section {
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article {
+        margin-left: 0;
+        order: 2;
+        align-items: center;
+    }
+
+    .img-container {
+        width: 80%;
+        margin: auto;
+        order: 1; 
+    }
+
+    .img {
+        width: 100%; 
+    }
+}
